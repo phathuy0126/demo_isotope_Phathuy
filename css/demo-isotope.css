@@ -26,6 +26,7 @@
     background: coral;    
     margin: 0px 10px;
     border-radius: 5px;
+    margin: 10px;
     transition: .3s ease;
 }
 .container .menu ul li:hover {
