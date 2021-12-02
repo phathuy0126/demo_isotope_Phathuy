@@ -24,7 +24,7 @@
             </ul>
         </nav>
         <div class="search">
-            <input type="text" placeholder="tìm kiếm..." list="danhsach">
+            <input type="text" placeholder="tìm kiếm..." list="">
             <datalist id="danhsach">
                 <option value="tất cả"></option>
                 <option value="yasuo"></option>
@@ -96,7 +96,7 @@
         </div>
     </div>
     <script>
-        $(function () {
+        $(function () {                                    
             //code sắp xếp canh đều giữa các hình trong layout
             $('.layout ul').isotope({
                 itemSelector: 'li'
@@ -117,7 +117,7 @@
                     });
                 }
             })
-            $('.search input').keypress(function (e) {
+            $('.search input').keypress(function (e) {                
                 if (e.keyCode == '13') {
                     let chu_da_nhap = $(this).val();
                     $('.title h1').text(chu_da_nhap);
@@ -146,8 +146,10 @@
                     }
                     let check = $('.layout ul li').hasClass(chu_da_nhap);                    
                     if (check == false) {
-                        alert(chu_da_nhap+' sắp được cập nhật');
+                        alert(chu_da_nhap+' chưa được cập nhật');
                     }
+                }else {
+                    $('.search input').attr('list','danhsach')
                 }
                 // setInterval(function () {
                 //     let chu_da_nhap = $('.search input').val();
