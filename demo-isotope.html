@@ -1,0 +1,169 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>demo thư viện isotope jquery</title>
+    <link rel="stylesheet" href="css/demo-isotope.css">
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
+    <script src="https://unpkg.com/isotope-layout@3/dist/isotope.pkgd.min.js"></script>
+</head>
+
+<body>
+    <div class="container">
+        <nav class="menu">
+            <ul>
+                <li data-danhmuc="tatca">tất cả</li>
+                <li data-danhmuc="yasuo">yasuo</li>
+                <li data-danhmuc="zed">zed</li>
+                <li data-danhmuc="yone">yone</li>
+                <li data-danhmuc="ezreal">ezreal</li>
+                <li data-danhmuc="wukong">wukong</li>
+            </ul>
+        </nav>
+        <div class="search">
+            <input type="text" placeholder="tìm kiếm..." list="danhsach">
+            <datalist id="danhsach">
+                <option value="tất cả"></option>
+                <option value="yasuo"></option>
+                <option value="zed"></option>
+                <option value="yone"></option>
+                <option value="ezreal"></option>
+                <option value="wukong"></option>
+            </datalist>
+        </div>
+        <div class="title">
+            <h1>Tất cả</h1>
+        </div>
+        <div class="layout">
+            <ul>
+                <li class="yasuo"><img
+                        src="https://tse2.mm.bing.net/th?id=OIP.8V60HQPBeW0iGIH7zH9kxgHaEo&pid=Api&P=0&w=259&h=163"
+                        alt=""></li>
+                <li class="yasuo"><img
+                        src="https://tse3.mm.bing.net/th?id=OIP.knhsPhoL59mvRwIKy963vQHaEK&pid=Api&P=0&w=278&h=157"
+                        alt=""></li>
+                <li class="yasuo"><img
+                        src="https://tse1.mm.bing.net/th?id=OIP.PkbOl6bVLrcNNwVhyHOdHQHaEK&pid=Api&P=0&w=322&h=182"
+                        alt=""></li>
+                <li class="zed"><img
+                        src="https://tse4.mm.bing.net/th?id=OIP.GQarL6HqY7rKpab0IGBLowHaEK&pid=Api&P=0&w=279&h=157"
+                        alt=""></li>
+                <li class="zed"><img
+                        src="https://tse1.mm.bing.net/th?id=OIP.F8qQWJkmmRKDi_u4_s5nxQHaEX&pid=Api&P=0&w=278&h=165"
+                        alt=""></li>
+                <li class="zed"><img
+                        src="https://tse4.mm.bing.net/th?id=OIP.frEaBIr_BdcvwCWEYwBOGwHaEK&pid=Api&P=0&w=317&h=179"
+                        alt=""></li>
+                <li class="zed"><img
+                        src="https://tse3.mm.bing.net/th?id=OIP.aCGTXDz-8AAKCPnDBWbJ3wHaEK&pid=Api&P=0&w=317&h=179"
+                        alt=""></li>
+                <li class="yone"><img
+                        src="https://tse3.mm.bing.net/th?id=OIP.3WVn7zRRyz8TVR2kh7DZqgHaEL&pid=Api&P=0&w=325&h=184"
+                        alt=""></li>
+                <li class="yone"><img
+                        src="https://tse3.mm.bing.net/th?id=OIP.uL5XqkFSUMybvRVyJ5IhcwHaEK&pid=Api&P=0&w=302&h=171"
+                        alt=""></li>
+                <li class="yone"><img src="https://i.redd.it/w6w1hg5wotc51.jpg" alt=""></li>
+                <li class="ezreal"><img
+                        src="https://tse1.mm.bing.net/th?id=OIP.aBD3DWkL_ow0w81E9WpneQHaHa&pid=Api&P=0&w=300&h=300"
+                        alt=""></li>
+                <li class="ezreal"><img
+                        src="https://tse2.mm.bing.net/th?id=OIP.HE3IIEzEB0tk518caiuDvQHaFl&pid=Api&P=0&w=224&h=170"
+                        alt=""></li>
+                <li class="ezreal"><img
+                        src="https://tse4.mm.bing.net/th?id=OIP.PFdBYlR_5YF7rsJ-r6CZBgHaE8&pid=Api&P=0&w=227&h=152"
+                        alt=""></li>
+                <li class="wukong"><img
+                        src="https://tse4.mm.bing.net/th?id=OIP.aZLcqME1tQc5RESkzI9xkQHaEK&pid=Api&P=0&w=268&h=151"
+                        alt=""></li>
+                <li class="wukong"><img
+                        src="https://tse3.mm.bing.net/th?id=OIP.QduSngAR66Q1iJIN8RU_KAHaEo&pid=Api&P=0&w=240&h=151"
+                        alt=""></li>
+                <li class="wukong"><img
+                        src="https://tse2.mm.bing.net/th?id=OIP.d9IJQDOXQLf7MDGpFdbm5gHaEX&pid=Api&P=0&w=280&h=166"
+                        alt=""></li>
+                <li class="Hào" style="display: none;"><img
+                        src="https://f34-zpg.zdn.vn/5570234705152110252/c40ab76c8c3747691e26.jpg" alt=""></li>
+                <li class="Sơn" style="display: none;"><img
+                        src="https://zpsocial-f46-org.zadn.vn/c1d2295ad84c37126e5d.jpg" alt=""></li>
+            </ul>
+        </div>
+    </div>
+    <script>
+        $(function () {
+            //code sắp xếp canh đều giữa các hình trong layout
+            $('.layout ul').isotope({
+                itemSelector: 'li'
+            })
+            //code cho lọc layout
+            $('.menu ul li').click(function () {
+                let tieude = $(this).text();
+                $('.title h1').text(tieude);
+                let danhmuc = $(this).data('danhmuc');
+                danhmuc = '.' + danhmuc;
+                if (danhmuc == '.tatca') {
+                    $('.layout ul').isotope({
+                        filter: '*'
+                    });
+                } else {
+                    $('.layout ul').isotope({
+                        filter: danhmuc
+                    });
+                }
+            })
+            $('.search input').keypress(function (e) {
+                if (e.keyCode == '13') {
+                    let chu_da_nhap = $(this).val();
+                    $('.title h1').text(chu_da_nhap);
+                    let danhmuc = chu_da_nhap;
+                    danhmuc = '.' + danhmuc;
+                    if (danhmuc == '.tất cả') {
+                        $('.layout ul').isotope({
+                            filter: '*'
+                        });
+                    } else {
+                        $('.layout ul').isotope({
+                            filter: danhmuc
+                        });
+                    }
+                    if (danhmuc == '.Hào') {
+                        $('.layout ul').isotope({
+                            filter: danhmuc
+                        });
+                        $('.layout ul li').css({ display: 'block' })
+                    }
+                    if (danhmuc == '.Sơn') {
+                        $('.layout ul').isotope({
+                            filter: danhmuc
+                        });
+                        $('.layout ul li').css({ display: 'block' })
+                    }
+                    let check = $('.layout ul li').hasClass(chu_da_nhap);                    
+                    if (check == false) {
+                        alert(chu_da_nhap+' sắp được cập nhật');
+                    }
+                }
+                // setInterval(function () {
+                //     let chu_da_nhap = $('.search input').val();
+                //     $('.title h1').text(chu_da_nhap);
+                //     let danhmuc = chu_da_nhap;
+                //     danhmuc = '.' + danhmuc;
+                //     if (danhmuc == '.tất cả') {
+                //         $('.layout ul').isotope({
+                //             filter: '*'
+                //         });
+                //     } else {
+                //         $('.layout ul').isotope({
+                //             filter: danhmuc
+                //         });
+                //     }
+                // }, 200)
+            })
+        })
+    </script>
+</body>
+
+</html>
