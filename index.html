@@ -88,9 +88,9 @@
                 <li class="wukong"><img
                         src="https://tse2.mm.bing.net/th?id=OIP.d9IJQDOXQLf7MDGpFdbm5gHaEX&pid=Api&P=0&w=280&h=166"
                         alt=""></li>
-                <li class="Hào" style="display: none;"><img
+                <li class="Hào"><img
                         src="https://f34-zpg.zdn.vn/5570234705152110252/c40ab76c8c3747691e26.jpg" alt=""></li>
-                <li class="Sơn" style="display: none;"><img
+                <li class="Sơn"><img
                         src="https://zpsocial-f46-org.zadn.vn/c1d2295ad84c37126e5d.jpg" alt=""></li>
             </ul>
         </div>
@@ -135,14 +135,12 @@
                     if (danhmuc == '.Hào') {
                         $('.layout ul').isotope({
                             filter: danhmuc
-                        });
-                        $('.layout ul li').css({ display: 'block' })
+                        });                        
                     }
                     if (danhmuc == '.Sơn') {
                         $('.layout ul').isotope({
                             filter: danhmuc
-                        });
-                        $('.layout ul li').css({ display: 'block' })
+                        });                        
                     }
                     let check = $('.layout ul li').hasClass(chu_da_nhap);                    
                     if (check == false) {
